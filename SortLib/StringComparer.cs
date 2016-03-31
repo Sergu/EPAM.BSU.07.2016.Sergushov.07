@@ -26,7 +26,26 @@ namespace SortLib
             sideA = a;
             sideB = b;
         }
+        public int SideA { get { return sideA; } }
+        public int SideB { get { return sideB; } }
         public int Area { get { return sideA * sideB; } }
+        public bool Equals(Rectangle other)
+        {
+            if (ReferenceEquals(other, null))
+                throw new NullReferenceException();
+            if ((other.sideA == this.SideA) && (other.SideB == this.SideB))
+                return true;
+            return false;
+        }
+        public override bool Equals(object obj)
+        {
+            if(ReferenceEquals(obj,null))
+                throw new NullReferenceException();
+            Rectangle rect = obj as Rectangle;
+            if (rect != null)
+                return Equals(rect);
+            return false;
+        }
     }
     public class RectangleComparer : IComparer<Rectangle>
     {

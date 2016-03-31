@@ -12,25 +12,24 @@ namespace CustomQueueApp
     {
         static void Main(string[] args)
         {
-            //CustomQueue<string> queue = new CustomQueue<string>();
-            //queue.Enqueue("one");
-            //queue.Enqueue("two");
-            //queue.Enqueue("three");
-            //string str = queue.Peek();
-            //foreach (string s in queue)
-            //{
-            //    Console.WriteLine(s);
-            //}
-            //Console.WriteLine("peeked string: " + str);
-            //Console.WriteLine("count: {0}", queue.Count);
-            //queue.Dequeue();
-            //foreach (string s in queue)
-            //{
-            //    Console.WriteLine(s);
-            //}
-            //Console.WriteLine("after dequeue - count: {0}", queue.Count);
-            //Console.ReadLine();
-            string
+            CustomQueue<string> queue = new CustomQueue<string>();
+            queue.Enqueue("one");
+            queue.Enqueue("two");
+            queue.Enqueue("three");
+            string str = queue.Peek();
+            foreach (string s in queue)
+            {
+                Console.WriteLine(s);
+            }
+            Console.WriteLine("peeked string: " + str);
+            Console.WriteLine("count: {0}", queue.Count);
+            queue.Dequeue();
+            foreach (string s in queue)
+            {
+                Console.WriteLine(s);
+            }
+            Console.WriteLine("after dequeue - count: {0}", queue.Count);
+            Console.ReadLine();
         }
     }
 }

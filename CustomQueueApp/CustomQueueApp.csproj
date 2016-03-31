@@ -52,6 +52,10 @@
       <Project>{4f666cf5-9a1c-4d4d-a3a3-2d90948d0d2a}</Project>
       <Name>CustomQueueTask3</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SortLib\SortLib.csproj">
+      <Project>{36c91077-e8d0-4c08-8bae-493d6338d04e}</Project>
+      <Name>SortLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
